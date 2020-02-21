@@ -1,0 +1,21 @@
+apply plugin: 'java'
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+
+    test {
+        resources {
+            srcDir 'test'
+        }
+    }
+}
+
+task edgeconvert(type: JavaExec) {
+    main = 'RunEdgeConvert'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
