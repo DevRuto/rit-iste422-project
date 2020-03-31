@@ -1,0 +1,1 @@
+[![Action status](https://github.com/DevRuto/rit-iste422-project/workflows/main/badge.svg?branch=master)](https://github.com/DevRuto/rit-iste422-project/actions)
