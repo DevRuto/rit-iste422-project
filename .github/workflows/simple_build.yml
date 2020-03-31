@@ -20,6 +20,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: Prepare Build
+      run: mkdir build
     - name: Build Java Code
       run: javac -cp lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar -d build ./src/java/*.java
     - name: Build Test Code
